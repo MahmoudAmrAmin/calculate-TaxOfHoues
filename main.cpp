@@ -55,4 +55,25 @@ int main()
     ob1.GetPropertyTax(Rate);
     // print method
     ob1.print();
+    cout<<"***************************************"<<endl;
+    //second object with (pointers)
+    House ob2  , *ptr1=&ob2;
+    cout<<"enter number of house "<<endl;
+    cin >> NumberOfHouse;
+    ptr1->SetNumberOfHouse(NumberOfHouse);
+    cout<<"enter city of house "<<Endl;
+    cin >> City;
+    ptr1->SetNameOfCity(City);
+    cout<<"enter street of house "<<Endl;
+    cin >>StreetOfHouse;
+    ptr1->SetNameOfStreet(StreetOfHouse);
+    cout<<"enter price of house "<<endl;
+    cin>>Price;
+    ptr1->SetPriceOfHouse(Price);
+    cout<<"enter rate of tax "<<endl;
+    cin >>Rate;
+    ptr1->GetPropertyTax(Rate);
+    // print method
+    ptr1->print();
+
 }
