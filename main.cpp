@@ -31,10 +31,28 @@ void House::print() {
     cout<<"House of number : "<<number<<endl;
     cout<<"in th city : "<<city<<endl;
     cout<<"at the street : "<<street<<Endl;
-    cout<<"amount of tax is "<<tax;
+    cout<<"amount of tax is "<<tax<<endl;
 }
 int main()
 {
     // First object of House class
     House ob1;
+    int NumberOfHouse , Price ; string StreetOfHouse , City ; double Rate;
+    cout<<"enter number of house "<<endl;
+    cin >> NumberOfHouse;
+    ob1.SetNumberOfHouse(NumberOfHouse);
+    cout<<"enter city of house "<<Endl;
+    cin >> City;
+    ob1.SetNameOfCity(City);
+    cout<<"enter street of house "<<Endl;
+    cin >>StreetOfHouse;
+    ob1.SetNameOfStreet(StreetOfHouse);
+    cout<<"enter price of house "<<endl;
+    cin>>Price;
+    ob1.SetPriceOfHouse(Price);
+    cout<<"enter rate of tax "<<endl;
+    cin >>Rate;
+    ob1.GetPropertyTax(Rate);
+    // print method
+    ob1.print();
 }
